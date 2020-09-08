@@ -6,6 +6,8 @@ var bodyParser = require('body-parser');
 var compression = require('compression');
 var topicRouter=require('./routes/topic')
 var template = require('./lib/template.js');
+var helmet = require('helmet')
+app.use(helmet())
 
 
 //미들웨어= 남이 만들어놓은 도구 사용하는 것.
